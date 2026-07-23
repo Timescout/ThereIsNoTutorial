@@ -36,8 +36,7 @@ public partial class Hand : Control
 		if (!CheckRules(playedCard)) { return; }
 		
 		Card currentDiscard = GetNode<Card>("DiscardPile");
-		currentDiscard.Attributes.Suit = playedCard.Attributes.Suit;
-		currentDiscard.Attributes.Rank = playedCard.Attributes.Rank;
+		currentDiscard.Attributes = playedCard.Attributes;
 		CardButton.QueueFree();
 	}
 	
@@ -49,7 +48,8 @@ public partial class Hand : Control
 		Card DiscardPile = GetNode<Card>("DiscardPile");
 		if (_Round >= 1 &&
 			card.Attributes.Suit != DiscardPile.Attributes.Suit && 
-			card.Attributes.Rank != DiscardPile.Attributes.Rank) 
+			card.Attributes.Rank != DiscardPile.Attributes.Rank
+		) 
 			{
 				return false; 
 			}

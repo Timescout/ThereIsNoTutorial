@@ -3,20 +3,30 @@ using System;
 
 public partial class Card : Control
 {
-	[Export]
-	public CardAttributes Attributes = new CardAttributes();
-	
-	private const int _MAXCARDNUMBER = 10;
-	
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
+	//private static _Graphics = ;
+
+	Card()
 	{
 		// Randomly Create a card
-		Attributes.Rank = GD.RandRange(1, 10);
-		Attributes.Suit = (Suit)GD.RandRange(0, 3);
+		_attributes = new CardAttributes(GD.RandRange(1, 10), (Suit)GD.RandRange(0, 3));
 	}
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
+
+	private CardAttributes _attributes;
+
+	[Export]
+	public CardAttributes Attributes 
+	{ 
+		get => _attributes;
+		set
+		{
+			Attributes.Rank = value.Rank;
+			Attributes.Suit = value.Suit;
+			UpdateGraphics();
+		}
+	}
+	
+
+	public void UpdateGraphics()
 	{
 		// Set Graphics
 		GetNode<RichTextLabel>("Number").Text = "[color=black]" + Attributes.Rank.ToString() + "[/color]";
@@ -36,5 +46,18 @@ public partial class Card : Control
 			default:
 				break;
 		}
+	}
+	
+	
+	private const int _MAXCARDNUMBER = 10;
+	
+	// Called when the node enters the scene tree for the first time.
+	public override void _Ready()
+	{
+		UpdateGraphics();
+	}
+	// Called every frame. 'delta' is the elapsed time since the previous frame.
+	public override void _Process(double delta)
+	{
 	}
 }
