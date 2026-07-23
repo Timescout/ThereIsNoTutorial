@@ -26,17 +26,6 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="PlayerHand" type="HBoxContainer" parent="." unique_id=109123279]
-layout_mode = 1
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = -200.0
-offset_bottom = -50.0
-grow_horizontal = 2
-grow_vertical = 0
-
 [node name="DrawButton" type="Button" parent="." unique_id=178796589]
 layout_mode = 0
 offset_left = 450.0
@@ -46,12 +35,48 @@ offset_bottom = 270.0
 scale = Vector2(1.0193999, 1)
 text = "Draw"
 
-[node name="Label" type="Label" parent="." unique_id=1692587867]
-layout_mode = 0
+[node name="TitleLabel" type="Label" parent="." unique_id=1692587867]
+layout_mode = 1
 offset_left = 55.0
-offset_top = 53.0
+offset_top = 55.0
 offset_right = 253.0
-offset_bottom = 128.0
+offset_bottom = 130.0
 text = "There Is No Tutorial
 A game by Timescout
 How to play: Figure it out "
+
+[node name="CountDownCounter" type="Label" parent="." unique_id=459606359]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.0
+offset_top = 55.0
+offset_right = 47.0
+offset_bottom = 78.0
+grow_horizontal = 2
+text = "Counter"
+
+[node name="RoundLabel" type="Label" parent="." unique_id=1886175504]
+layout_mode = 1
+offset_left = 55.0
+offset_top = 140.0
+offset_right = 110.0
+offset_bottom = 163.0
+text = "Round "
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1520293520]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerHand" type="HBoxContainer" parent="." unique_id=109123279]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -150.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 0
