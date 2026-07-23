@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://3jhq8ybin4ag"]
+
+[ext_resource type="Script" uid="uid://ddma0k0n1j651" path="res://src/data/Hand/Hand.cs" id="1_2m2t6"]
+[ext_resource type="PackedScene" uid="uid://eeusdhuy5enj" path="res://src/data/card/card.tscn" id="2_uv6a6"]
+
+[node name="Hand" type="Control" unique_id=288133402]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_2m2t6")
+
+[node name="DiscardPile" parent="." unique_id=1512836671 instance=ExtResource("2_uv6a6")]
+layout_mode = 0
+offset_left = 730.0
+offset_top = 130.0
+offset_right = 830.0
+offset_bottom = 270.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=739293126]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayerHand" type="HBoxContainer" parent="." unique_id=109123279]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -200.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="DrawButton" type="Button" parent="." unique_id=178796589]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 130.0
+offset_right = 550.0
+offset_bottom = 270.0
+scale = Vector2(1.0193999, 1)
+text = "Draw"
+
+[node name="Label" type="Label" parent="." unique_id=1692587867]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 53.0
+offset_right = 253.0
+offset_bottom = 128.0
+text = "There Is No Tutorial
+A game by Timescout
+How to play: Figure it out "
