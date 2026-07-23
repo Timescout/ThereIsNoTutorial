@@ -20,7 +20,7 @@ public partial class Hand : Control
 
 			card.Pressed += () => PlayCard(card.Name);
 
-			GetNode<HBoxContainer>("PlayerHand").AddChild(card);
+			GetNode<HBoxContainer>("PlayerHandScroller/PlayerHand").AddChild(card);
 			_CardsInHand++;
 		}
 	}
@@ -28,7 +28,7 @@ public partial class Hand : Control
 	private void PlayCard(string CardButtonId)
 	{
 
-		Card playedCard = GetNode<Card>("PlayerHand/" + CardButtonId);
+		Card playedCard = GetNode<Card>("PlayerHandScroller/PlayerHand/" + CardButtonId);
 		
 		// check if the move was valid. If not reduce the counter.
 		if (!CheckRules(playedCard)) { 
@@ -67,7 +67,7 @@ public partial class Hand : Control
 
 	private void SetBoard(int round)
 	{
-		foreach (Node child in GetNode<HBoxContainer>("PlayerHand").GetChildren())
+		foreach (Node child in GetNode<HBoxContainer>("PlayerHandScroller/PlayerHand").GetChildren())
 		{
 			child.QueueFree();
 		}

@@ -65,18 +65,19 @@ offset_right = 110.0
 offset_bottom = 163.0
 text = "Round "
 
-[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1520293520]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="PlayerHand" type="HBoxContainer" parent="." unique_id=109123279]
+[node name="PlayerHandScroller" type="ScrollContainer" parent="." unique_id=1520293520]
+z_index = -3
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -150.0
-offset_bottom = -150.0
+offset_top = -220.0
+offset_bottom = -70.0
 grow_horizontal = 2
 grow_vertical = 0
+
+[node name="PlayerHand" type="HBoxContainer" parent="PlayerHandScroller" unique_id=109123279]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
