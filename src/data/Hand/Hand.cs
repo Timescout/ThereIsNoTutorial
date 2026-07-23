@@ -25,7 +25,6 @@ public partial class Hand : Control
 	
 	private void PlayCard(string CardButtonId)
 	{
-		GD.Print(CardButtonId);
 		Card playedCard = GetNode<Card>("PlayerHand/" + CardButtonId);
 		
 		// check if the move was valid.
