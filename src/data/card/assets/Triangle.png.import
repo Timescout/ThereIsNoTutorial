@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpgyr8hwma3o5"
-path="res://.godot/imported/Circle.png-46dfbce7db04b301c4b4b80e6771b4ae.ctex"
+uid="uid://bwr5yr4avl1ef"
+path="res://.godot/imported/Triangle.png-d599b8f2063e202c21b74a2c53ab1647.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/data/card/Circle.png"
-dest_files=["res://.godot/imported/Circle.png-46dfbce7db04b301c4b4b80e6771b4ae.ctex"]
+source_file="res://src/data/card/assets/Triangle.png"
+dest_files=["res://.godot/imported/Triangle.png-d599b8f2063e202c21b74a2c53ab1647.ctex"]
 
 [params]
 
