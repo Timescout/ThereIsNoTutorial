@@ -36,8 +36,8 @@ public partial class Hand : Control
 		if (!CheckRules(playedCard)) { return; }
 		
 		Card currentDiscard = GetNode<Card>("DiscardPile");
-		currentDiscard.Attributes.CardSuit = playedCard.Attributes.CardSuit;
-		currentDiscard.Attributes.Number = playedCard.Attributes.Number;
+		currentDiscard.Attributes.Suit = playedCard.Attributes.Suit;
+		currentDiscard.Attributes.Rank = playedCard.Attributes.Rank;
 		CardButton.QueueFree();
 	}
 	
@@ -48,8 +48,8 @@ public partial class Hand : Control
 		// Round 1, Match Number or Suit.
 		Card DiscardPile = GetNode<Card>("DiscardPile");
 		if (_Round >= 1 &&
-			card.Attributes.CardSuit != DiscardPile.Attributes.CardSuit && 
-			card.Attributes.Number != DiscardPile.Attributes.Number) 
+			card.Attributes.Suit != DiscardPile.Attributes.Suit && 
+			card.Attributes.Rank != DiscardPile.Attributes.Rank) 
 			{
 				return false; 
 			}

@@ -10,7 +10,7 @@ public enum Suit {
 
 public partial class CardAttributes : Resource {
 	[Export]
-	public Suit CardSuit { get; set; }
+	public Suit Suit { get; set; }
 	[Export]
-	public int Number { get; set; }
+	public int Rank { get; set; }
 }
