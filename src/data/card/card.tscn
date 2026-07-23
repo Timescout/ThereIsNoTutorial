@@ -1,13 +1,11 @@
 [gd_scene format=3 uid="uid://eeusdhuy5enj"]
 
 [ext_resource type="Script" uid="uid://ieldqcww56uk" path="res://src/data/card/Card.cs" id="1_heerg"]
-[ext_resource type="Texture2D" uid="uid://bd084chthwrjk" path="res://src/data/card/Background.png" id="2_pqgpt"]
-[ext_resource type="Texture2D" uid="uid://bpgyr8hwma3o5" path="res://src/data/card/Circle.png" id="3_jjfi6"]
+[ext_resource type="Texture2D" uid="uid://bd084chthwrjk" path="res://src/data/card/assets/Background.png" id="2_pqgpt"]
+[ext_resource type="Texture2D" uid="uid://bpgyr8hwma3o5" path="res://src/data/card/assets/Circle.png" id="3_jjfi6"]
 
-[node name="Card" type="Control" unique_id=1512836671]
+[node name="Card" type="Button" unique_id=1737949393]
 custom_minimum_size = Vector2(100, 140)
-layout_mode = 3
-anchors_preset = 0
 offset_right = 100.0
 offset_bottom = 140.0
 size_flags_horizontal = 6

@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Card : Control
+public partial class Card : Button
 {
 	//private static _Graphics = ;
 

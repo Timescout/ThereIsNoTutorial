@@ -6,38 +6,34 @@ public partial class Hand : Control
 	private int _Round = 1;
 	private int _cardId = 0;
 	
-	private void DrawOne() 
-	{
-		DrawCard(1);
-	}
 	private void DrawCard(int numberDrawn = 1) 
 	{
-		PackedScene card = GD.Load<PackedScene>("res://src/data/card/card.tscn");
+		PackedScene cardScene = GD.Load<PackedScene>("res://src/data/card/card.tscn");
 		for (int i = 0; i < numberDrawn; i++)
 		{
-			Button button = new Button();
-			button.Name = _cardId.ToString();
+			Card card = cardScene.Instantiate() as Card;
+
+			card.Name = _cardId.ToString();
 			_cardId++;
-			button.AddChild(card.Instantiate());
-			button.CustomMinimumSize = new Vector2(100, 200);
-			button.Size = new Vector2(100, 140);
-			button.Pressed += () => PlayCard(button.Name);
-			button.ZIndex = 1;
-			GetNode<HBoxContainer>("PlayerHand").AddChild(button);
+
+			card.Pressed += () => PlayCard(card.Name);
+
+			GetNode<HBoxContainer>("PlayerHand").AddChild(card);
+			
 		}
 	}
 	
-	private void PlayCard(string CardButtonId) 
+	private void PlayCard(string CardButtonId)
 	{
-		Button CardButton = GetNode<Button>("PlayerHand/" + CardButtonId);
-		Card playedCard = CardButton.GetNode<Card>("Card");
+		GD.Print(CardButtonId);
+		Card playedCard = GetNode<Card>("PlayerHand/" + CardButtonId);
 		
 		// check if the move was valid.
 		if (!CheckRules(playedCard)) { return; }
 		
 		Card currentDiscard = GetNode<Card>("DiscardPile");
 		currentDiscard.Attributes = playedCard.Attributes;
-		CardButton.QueueFree();
+		playedCard.QueueFree();
 	}
 	
 	private bool CheckRules(Card card)
@@ -60,7 +56,7 @@ public partial class Hand : Control
 	public override void _Ready()
 	{
 		DrawCard(5);
-		GetNode<Button>("DrawButton").Pressed += DrawOne;
+		GetNode<Button>("DrawButton").Pressed += () => DrawCard(1);
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
