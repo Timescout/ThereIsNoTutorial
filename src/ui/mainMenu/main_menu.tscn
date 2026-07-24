@@ -13,11 +13,17 @@ grow_vertical = 2
 script = ExtResource("1_wue33")
 
 [node name="Title" type="Label" parent="." unique_id=451686444]
-layout_mode = 0
-offset_left = 554.0
-offset_top = 100.0
-offset_right = 704.0
-offset_bottom = 123.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -321.5
+offset_top = 123.0
+offset_right = 321.5
+offset_bottom = 209.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.91, 0.08189998, 0.08189998, 1)
+theme_override_font_sizes/font_size = 71
 text = "There is no Tutorial"
 
 [node name="MenuButtonContainer" type="VBoxContainer" parent="." unique_id=29952877]
@@ -28,9 +34,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -150.0
-offset_top = -91.5
+offset_top = 41.5
 offset_right = 150.0
-offset_bottom = 91.5
+offset_bottom = 224.5
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
