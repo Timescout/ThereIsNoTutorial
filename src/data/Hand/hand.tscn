@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ddma0k0n1j651" path="res://src/data/Hand/Hand.cs" id="1_2m2t6"]
 [ext_resource type="PackedScene" uid="uid://eeusdhuy5enj" path="res://src/data/card/card.tscn" id="2_uv6a6"]
+[ext_resource type="Texture2D" uid="uid://dboh4elqvofdv" path="res://src/data/card/assets/Back Red 2.png" id="3_x8imf"]
 
 [node name="Hand" type="Control" unique_id=288133402]
 layout_mode = 3
@@ -26,24 +27,14 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="DrawButton" type="Button" parent="." unique_id=178796589]
+[node name="DrawButton" type="TextureButton" parent="." unique_id=933113465]
 layout_mode = 0
 offset_left = 450.0
 offset_top = 130.0
 offset_right = 550.0
 offset_bottom = 270.0
 scale = Vector2(1.0193999, 1)
-text = "Draw"
-
-[node name="TitleLabel" type="Label" parent="." unique_id=1692587867]
-layout_mode = 1
-offset_left = 55.0
-offset_top = 55.0
-offset_right = 253.0
-offset_bottom = 130.0
-text = "There Is No Tutorial
-A game by Timescout
-How to play: Figure it out "
+texture_normal = ExtResource("3_x8imf")
 
 [node name="CountDownCounter" type="Label" parent="." unique_id=459606359]
 layout_mode = 1
@@ -55,18 +46,21 @@ offset_top = 55.0
 offset_right = 47.0
 offset_bottom = 78.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(0.91, 0.08189998, 0.08189998, 1)
+theme_override_font_sizes/font_size = 30
 text = "Counter"
 
 [node name="RoundLabel" type="Label" parent="." unique_id=1886175504]
 layout_mode = 1
 offset_left = 55.0
-offset_top = 140.0
+offset_top = 55.0
 offset_right = 110.0
-offset_bottom = 163.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0.91, 0.08189998, 0.08189998, 1)
+theme_override_font_sizes/font_size = 30
 text = "Round "
 
 [node name="PlayerHandScroller" type="ScrollContainer" parent="." unique_id=1520293520]
-z_index = -3
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
