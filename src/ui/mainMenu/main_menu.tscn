@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bugib7sca37nf"]
+
+[ext_resource type="Theme" uid="uid://cxe8sif5ho1gs" path="res://src/ui/mainMenu/menu_buttons.tres" id="1_qfl0q"]
+[ext_resource type="Script" uid="uid://c7s7r1csppi67" path="res://src/ui/mainMenu/MainMenu.cs" id="1_wue33"]
+
+[node name="MainMenu" type="Control" unique_id=1454304696]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wue33")
+
+[node name="Title" type="Label" parent="." unique_id=451686444]
+layout_mode = 0
+offset_left = 554.0
+offset_top = 100.0
+offset_right = 704.0
+offset_bottom = 123.0
+text = "There is no Tutorial"
+
+[node name="MenuButtonContainer" type="VBoxContainer" parent="." unique_id=29952877]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -91.5
+offset_right = 150.0
+offset_bottom = 91.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="StartButton" type="Button" parent="MenuButtonContainer" unique_id=1301743402]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("1_qfl0q")
+text = "Play
+"
+
+[node name="QuitButton" type="Button" parent="MenuButtonContainer" unique_id=969251613]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme = ExtResource("1_qfl0q")
+text = "Quit"

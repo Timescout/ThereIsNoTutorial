@@ -1,9 +1,6 @@
 [gd_scene format=3 uid="uid://c2o8bbpgpais7"]
 
-[ext_resource type="PackedScene" uid="uid://3jhq8ybin4ag" path="res://src/data/Hand/hand.tscn" id="1_avv2o"]
 [ext_resource type="Script" uid="uid://bs5mtxxa448bd" path="res://src/core/Main.cs" id="1_ukt3u"]
 
 [node name="Main" type="Node" unique_id=727812979]
 script = ExtResource("1_ukt3u")
-
-[node name="Hand" parent="." unique_id=288133402 instance=ExtResource("1_avv2o")]
