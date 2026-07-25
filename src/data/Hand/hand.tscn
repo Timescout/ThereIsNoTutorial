@@ -46,8 +46,8 @@ offset_top = 55.0
 offset_right = 47.0
 offset_bottom = 78.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.91, 0.08189998, 0.08189998, 1)
-theme_override_font_sizes/font_size = 30
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
 text = "Counter"
 
 [node name="RoundLabel" type="Label" parent="." unique_id=1886175504]
@@ -56,7 +56,7 @@ offset_left = 55.0
 offset_top = 55.0
 offset_right = 110.0
 offset_bottom = 78.0
-theme_override_colors/font_color = Color(0.91, 0.08189998, 0.08189998, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Round "
 
@@ -73,5 +73,5 @@ grow_vertical = 0
 
 [node name="PlayerHand" type="HBoxContainer" parent="PlayerHandScroller" unique_id=109123279]
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 6
 theme_override_constants/separation = 5
