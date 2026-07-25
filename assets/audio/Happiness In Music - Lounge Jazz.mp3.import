@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnek0v53brvuy"
+path="res://.godot/imported/Happiness In Music - Lounge Jazz.mp3-3797f87d91047b515a4b97b1c03b4a84.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Happiness In Music - Lounge Jazz.mp3"
+dest_files=["res://.godot/imported/Happiness In Music - Lounge Jazz.mp3-3797f87d91047b515a4b97b1c03b4a84.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

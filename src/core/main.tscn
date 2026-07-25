@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bs5mtxxa448bd" path="res://src/core/Main.cs" id="1_ukt3u"]
 [ext_resource type="Texture2D" uid="uid://24sgh74uaags" path="res://assets/green_mat.png" id="2_ukt3u"]
+[ext_resource type="AudioStream" uid="uid://dnek0v53brvuy" path="res://assets/audio/Happiness In Music - Lounge Jazz.mp3" id="3_ivtyw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ivtyw"]
 content_margin_left = 0.0
@@ -35,3 +36,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ivtyw")
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=1139752233]
+stream = ExtResource("3_ivtyw")
+volume_db = -10.0
+autoplay = true

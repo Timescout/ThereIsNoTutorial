@@ -60,7 +60,7 @@ anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 30.0
-offset_top = -372.0
+offset_top = -441.0
 offset_right = 356.0
 offset_bottom = -30.0
 grow_vertical = 0
@@ -72,6 +72,10 @@ Assets:
 Green mat background - Vircon32
 card back - Sylly
 Font - The Luxurious Roman Project Authors
+
+Sounds: 
+Kenny - Card sounds
+Happiness in Music - music
 
 Artistic help & Playtesting - My Sister
 

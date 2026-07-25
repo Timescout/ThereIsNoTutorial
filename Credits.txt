@@ -5,6 +5,10 @@ Green mat background - Vircon32 - https://opengameart.org/content/green-mat-text
 card back - Sylly - https://opengameart.org/content/cards-set
 Font - The Luxurious Roman Project Authors - https://github.com/googlefonts/luxurious-roman
 
+Sounds:
+Card sound effects - Kenney - www.kenney.nl
+Lounge Jazz, Happiness in Music, Source: Free Music Archive, Licence CC BY-ND
+
 Artistic help & Playtesting - My Sister
 
 Playtesting and feedback:
