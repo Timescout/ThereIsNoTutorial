@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://ddma0k0n1j651" path="res://src/data/Hand/Hand.cs" id="1_2m2t6"]
 [ext_resource type="PackedScene" uid="uid://eeusdhuy5enj" path="res://src/data/card/card.tscn" id="2_uv6a6"]
 [ext_resource type="Texture2D" uid="uid://dboh4elqvofdv" path="res://src/data/card/assets/Back Red 2.png" id="3_x8imf"]
+[ext_resource type="AudioStream" uid="uid://chi31yg8syr23" path="res://assets/audio/roundStartCards.ogg" id="4_akbda"]
+[ext_resource type="AudioStream" uid="uid://b27reoprb4uws" path="res://assets/audio/playCard.ogg" id="5_xhct8"]
 
 [node name="Hand" type="Control" unique_id=288133402]
 layout_mode = 3
@@ -81,3 +83,12 @@ grow_vertical = 0
 layout_mode = 2
 size_flags_horizontal = 6
 theme_override_constants/separation = 5
+
+[node name="ShuffleSound" type="AudioStreamPlayer" parent="." unique_id=159082576]
+stream = ExtResource("4_akbda")
+bus = &"SFX"
+
+[node name="PlaySound" type="AudioStreamPlayer" parent="." unique_id=2118639245]
+stream = ExtResource("5_xhct8")
+volume_db = -10.0
+bus = &"SFX"

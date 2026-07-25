@@ -11,6 +11,10 @@ public partial class Hand : Control
 	private void DrawCard(int numberDrawn = 1) 
 	{
 		PackedScene cardScene = GD.Load<PackedScene>("res://src/data/card/card.tscn");
+		//Play correct sound
+		if (numberDrawn > 1) { GetNode<AudioStreamPlayer>("ShuffleSound").Play(); }
+		else {GetNode<AudioStreamPlayer>("PlaySound").Play();}
+
 		for (int i = 0; i < numberDrawn; i++)
 		{
 			Card card = cardScene.Instantiate() as Card;
@@ -39,7 +43,9 @@ public partial class Hand : Control
 			playedCard.WrongAnimationTime = 0;
 			return; 
 		}
-		
+
+		// Play the card
+		GetNode<AudioStreamPlayer>("PlaySound").Play();
 		Card currentDiscard = GetNode<Card>("DiscardPile");
 		currentDiscard.Attributes = playedCard.Attributes;
 		playedCard.QueueFree();
