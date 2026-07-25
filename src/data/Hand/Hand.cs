@@ -34,6 +34,9 @@ public partial class Hand : Control
 		if (!CheckRules(playedCard)) { 
 			_Turns--;
 			GetNode<Label>("CountDownCounter").Text = _Turns.ToString();
+			// Play animation to tell player that the play didn't work.
+			playedCard.Modulate = Color.Color8(255, 64, 64, 255);
+			playedCard.WrongAnimationTime = 0;
 			return; 
 		}
 		

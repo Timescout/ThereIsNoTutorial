@@ -3,7 +3,7 @@ using System;
 
 public partial class Card : Button
 {
-	//private static _Graphics = ;
+	public float WrongAnimationTime = 0;
 
 	Card()
 	{
@@ -59,5 +59,10 @@ public partial class Card : Button
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		WrongAnimationTime += (float)delta;
+		Modulate = Modulate.Lerp(
+			Color.Color8(255, 255, 255, 255), 
+			Mathf.Clamp(WrongAnimationTime/1.5f, 0f, 1f)
+		);
 	}
 }
