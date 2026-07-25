@@ -1,4 +1,4 @@
-
+Game design & programming - Timescout
 
 Assets:
 Green mat background - Vircon32 - https://opengameart.org/content/green-mat-texture
@@ -6,3 +6,9 @@ card back - Sylly - https://opengameart.org/content/cards-set
 Font - The Luxurious Roman Project Authors - https://github.com/googlefonts/luxurious-roman
 
 Artistic help & Playtesting - My Sister
+
+Playtesting and feedback:
+ma43210
+Cade
+Guntah
+Sunny
