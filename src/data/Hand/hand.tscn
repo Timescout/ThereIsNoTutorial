@@ -66,6 +66,7 @@ theme_override_font_sizes/font_size = 30
 text = "Round "
 
 [node name="PlayerHandScroller" type="ScrollContainer" parent="." unique_id=1520293520]
+clip_contents = false
 layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
