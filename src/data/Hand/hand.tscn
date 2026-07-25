@@ -16,23 +16,26 @@ size_flags_vertical = 3
 script = ExtResource("1_2m2t6")
 
 [node name="DiscardPile" parent="." unique_id=1512836671 instance=ExtResource("2_uv6a6")]
-layout_mode = 0
-offset_left = 730.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 50.0
 offset_top = 130.0
-offset_right = 830.0
+offset_right = 150.0
 offset_bottom = 270.0
-
-[node name="TextureButton" type="TextureButton" parent="." unique_id=739293126]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+grow_horizontal = 2
 
 [node name="DrawButton" type="TextureButton" parent="." unique_id=933113465]
-layout_mode = 0
-offset_left = 450.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -151.5
 offset_top = 130.0
-offset_right = 550.0
+offset_right = -48.5
 offset_bottom = 270.0
+grow_horizontal = 2
 scale = Vector2(1.0193999, 1)
 texture_normal = ExtResource("3_x8imf")
 
@@ -49,6 +52,8 @@ grow_horizontal = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "Counter"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="RoundLabel" type="Label" parent="." unique_id=1886175504]
 layout_mode = 1
