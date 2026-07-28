@@ -1,5 +1,5 @@
 ### About this project
-A game about finding the soulution through puzzling out what moves you can make made using the Godot game engine.
+A game about finding the solution through puzzling out what moves you can make.The game uses the Godot game engine.
 
 This was a submission to the GameMaker's Toolkit 2026 Game Jam which had the theme of "Count Down". I created a mechanic that counted the number of errors the player made each round, and if the counter reaches 0 the player is sent back to the beginning of the game. 
 
